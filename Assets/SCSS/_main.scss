@@ -1,0 +1,117 @@
+.banner{
+    position: relative;
+    img{
+        height: auto;
+    }
+    .bn-title{
+        position: absolute;
+        top:25%;
+        right: 20%;
+        p{
+            color: $text-gray;
+            font-size: 1.25vw;
+            
+        }
+        h1{
+            font-size: 3.333vw;
+            color: $text-black;
+            padding-bottom: 3.125vh;
+        }
+        button{
+            @include btn;
+            padding: 0.833vh 1.042vw;
+            color: $text-white;
+            font-size: 1.354vw;
+            
+        }
+    }
+}
+
+.review-banner{
+    margin-top: 5.208vw;
+    .review-title{
+        h1{
+            margin-top: 1.719vw;
+            font-weight: 700;
+            // font-size: 2.13vw;
+            
+        }
+        p{
+            color: $text-gray;
+            margin-top: 11px;
+        }
+        button{
+            @include btn;
+            margin-top: 11px;
+            // font-size: 0.833vw;
+            padding: 0.451vw 2.083vw;
+            color: $text-white;
+            i{
+                padding-left: 10px;
+            }
+
+        }
+    }
+    .review-right{
+        display: flex;
+        flex-direction: column;
+        img{
+            flex-basis: 50%;
+            // height: 100%;
+            &:first-child{
+                padding-bottom: 0.573vw;
+            }
+            
+        }
+    }
+}
+
+.cms-banner{
+    margin-top: 85px;
+    .cms-item{
+        position: relative;
+        .cms-title{
+            position: absolute;
+            top: 25%;
+            left: 10%;
+            p{
+                color: $text-gray;
+        
+            }
+            h4{
+                font-weight: 700;
+                color: $text-black;
+                
+            }
+            button{
+                background-color: transparent;
+                border: none;
+                font-size: 17px;
+                color: $btn ;
+                text-decoration: underline;
+                margin-top: 102px ;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    .review-right{
+        display: none !important;
+    }
+    .banner{
+        img{
+            // height: 57.917vw;
+            
+        }
+    }
+
+}
+@media screen and (max-width: $table) {
+
+}
+@media screen and (max-width: $laptop) {
+
+}
+@media screen and (max-width: $desktop) {
+}

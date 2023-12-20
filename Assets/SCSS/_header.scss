@@ -1,0 +1,68 @@
+.logo{
+    background-color: $bgn;
+    height: auto;
+    img{
+        padding: 32px;
+    }
+}
+.hd-menu{
+    display: none;
+    button{
+        border: none;
+        font-weight: bold;
+        i{
+            padding: 0 5px;
+        }
+    }
+    ul{
+        li{
+            i{
+                padding: 15px;
+                
+            }
+        }
+    }
+
+}
+.hd-nav{
+    ul{
+        li{
+            margin-right: 27px;
+            a{
+                font-size: 16px;
+                font-weight: 600;
+                padding: 15px;
+                transform: all 0.5s;
+            }
+            &:hover{
+                a{
+                    transition: all 0.5s;
+                    color: $btn !important;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: $mobile) {
+    
+}
+@media screen and (max-width: $table) {
+    .hd-menu{
+        display: flex;
+    }
+    .hd-nav{
+        display: none;
+        ul{
+            display: table-column;
+        }
+    }
+
+}
+@media screen and (max-width: $laptop) {
+
+}
+@media screen and (max-width: $desktop) {
+
+}

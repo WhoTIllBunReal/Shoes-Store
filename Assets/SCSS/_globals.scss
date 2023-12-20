@@ -1,0 +1,31 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Rethink+Sans:wght@400;500;600;700;800&display=swap');
+
+body{
+    background-color: var(--bgn-color, #F5F5F5);
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Rethink Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Rethink Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: $text-black;
+}
+p{
+    font-family: 'Rethink Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: $text-black !important;
+    margin: 0;
+    padding: 0;
+}
+

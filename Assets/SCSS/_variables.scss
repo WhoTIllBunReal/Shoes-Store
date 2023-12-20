@@ -1,0 +1,30 @@
+$text-black: #181818;
+$bgn: #262626;
+$text-gray: #909090;
+$text-white: #fff;
+$btn:#E27A25;
+
+
+$mobile: 576px;
+$table: 768px;
+$ipad-mini: 992px;
+$laptop: 1024px;
+$desktop: 1440px;
+
+@mixin btn{
+    background-color: $btn;
+    transition: all 0.5s;
+    border: none;
+    &:hover{
+        background-color: $text-gray;
+        transition: all 0.5s;
+    }
+}
+
+@mixin text-hovering{
+    transition: all 0.5s;
+    &:hover{
+        transition: all 0.5s;
+        color: $btn;
+    }
+}

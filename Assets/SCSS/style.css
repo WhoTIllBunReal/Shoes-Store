@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Rethink+Sans:wght@400;500;600;700;800&display=swap");
+body {
+  background-color: var(--bgn-color, #F5F5F5);
+  font-family: "Manrope", sans-serif;
+  font-family: "Rethink Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Rethink Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #181818;
+}
+
+p {
+  font-family: "Rethink Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #181818 !important;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  background-color: #262626;
+  height: auto;
+}
+.logo img {
+  padding: 32px;
+}
+
+.hd-menu {
+  display: none;
+}
+.hd-menu button {
+  border: none;
+  font-weight: bold;
+}
+.hd-menu button i {
+  padding: 0 5px;
+}
+.hd-menu ul li i {
+  padding: 15px;
+}
+
+.hd-nav ul li {
+  margin-right: 27px;
+}
+.hd-nav ul li a {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 15px;
+  transform: all 0.5s;
+}
+.hd-nav ul li:hover a {
+  transition: all 0.5s;
+  color: #E27A25 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .hd-menu {
+    display: flex;
+  }
+  .hd-nav {
+    display: none;
+  }
+  .hd-nav ul {
+    display: table-column;
+  }
+}
+.banner {
+  position: relative;
+}
+.banner img {
+  height: auto;
+}
+.banner .bn-title {
+  position: absolute;
+  top: 25%;
+  right: 20%;
+}
+.banner .bn-title p {
+  color: #909090;
+  font-size: 1.25vw;
+}
+.banner .bn-title h1 {
+  font-size: 3.333vw;
+  color: #181818;
+  padding-bottom: 3.125vh;
+}
+.banner .bn-title button {
+  background-color: #E27A25;
+  transition: all 0.5s;
+  border: none;
+  padding: 0.833vh 1.042vw;
+  color: #fff;
+  font-size: 1.354vw;
+}
+.banner .bn-title button:hover {
+  background-color: #909090;
+  transition: all 0.5s;
+}
+
+.review-banner {
+  margin-top: 5.208vw;
+}
+.review-banner .review-title h1 {
+  margin-top: 1.719vw;
+  font-weight: 700;
+}
+.review-banner .review-title p {
+  color: #909090;
+  margin-top: 11px;
+}
+.review-banner .review-title button {
+  background-color: #E27A25;
+  transition: all 0.5s;
+  border: none;
+  margin-top: 11px;
+  padding: 0.451vw 2.083vw;
+  color: #fff;
+}
+.review-banner .review-title button:hover {
+  background-color: #909090;
+  transition: all 0.5s;
+}
+.review-banner .review-title button i {
+  padding-left: 10px;
+}
+.review-banner .review-right {
+  display: flex;
+  flex-direction: column;
+}
+.review-banner .review-right img {
+  flex-basis: 50%;
+}
+.review-banner .review-right img:first-child {
+  padding-bottom: 0.573vw;
+}
+
+.cms-banner {
+  margin-top: 85px;
+}
+.cms-banner .cms-item {
+  position: relative;
+}
+.cms-banner .cms-item .cms-title {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+.cms-banner .cms-item .cms-title p {
+  color: #909090;
+}
+.cms-banner .cms-item .cms-title h4 {
+  font-weight: 700;
+  color: #181818;
+}
+.cms-banner .cms-item .cms-title button {
+  background-color: transparent;
+  border: none;
+  font-size: 17px;
+  color: #E27A25;
+  text-decoration: underline;
+  margin-top: 102px;
+}
+
+@media screen and (max-width: 576px) {
+  .review-right {
+    display: none !important;
+  }
+}/*# sourceMappingURL=style.css.map */
