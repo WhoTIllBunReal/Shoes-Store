@@ -151,6 +151,10 @@ a {
 }
 .cms-banner .cms-item {
   position: relative;
+  overflow: hidden;
+}
+.cms-banner .cms-item img {
+  transition: all 0.5s;
 }
 .cms-banner .cms-item .cms-title {
   position: absolute;
@@ -159,22 +163,63 @@ a {
 }
 .cms-banner .cms-item .cms-title p {
   color: #909090;
+  font-weight: 500;
+  font-size: 17px;
 }
 .cms-banner .cms-item .cms-title h4 {
   font-weight: 700;
   color: #181818;
+  font-size: 35px;
 }
 .cms-banner .cms-item .cms-title button {
   background-color: transparent;
   border: none;
-  font-size: 17px;
+  font-size: 13px;
   color: #E27A25;
   text-decoration: underline;
-  margin-top: 102px;
+  margin-top: 5.208vw;
+}
+.cms-banner .cms-item:hover img {
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+
+.products {
+  margin-top: 210px;
+}
+.products h2 {
+  font-weight: 700;
+}
+.products ul {
+  margin-top: 20px;
+}
+.products ul li a {
+  font-weight: 600;
+}
+.products ul li a .nav-tabs .nav-item.show .nav-link,
+.products ul li a .nav-tabs .nav-link.active {
+  color: #E27A25 !important;
 }
 
 @media screen and (max-width: 576px) {
   .review-right {
     display: none !important;
+  }
+  .cms-banner .cms-item:first-child {
+    margin-bottom: 10px;
+  }
+  .cms-banner .cms-item .cms-title p {
+    font-size: 14px !important;
+  }
+  .cms-banner .cms-item .cms-title h4 {
+    font-size: 20px !important;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .cms-banner .cms-item .cms-title p {
+    font-size: 1.4vw;
+  }
+  .cms-banner .cms-item .cms-title h4 {
+    font-size: 2.418vw;
   }
 }/*# sourceMappingURL=style.css.map */

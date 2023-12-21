@@ -68,32 +68,77 @@
 
 .cms-banner{
     margin-top: 85px;
+
     .cms-item{
         position: relative;
+        overflow: hidden;
+        img{
+            transition: all 0.5s;
+        }
+
+
+
         .cms-title{
             position: absolute;
             top: 25%;
             left: 10%;
             p{
                 color: $text-gray;
-        
+                font-weight: 500;
+                font-size: 17px;
+
             }
             h4{
                 font-weight: 700;
                 color: $text-black;
+                font-size: 35px;
+                
                 
             }
             button{
                 background-color: transparent;
                 border: none;
-                font-size: 17px;
+                font-size: 13px;
                 color: $btn ;
                 text-decoration: underline;
-                margin-top: 102px ;
+                margin-top: 5.208vw ;
+            }
+        }
+        &:hover{
+            img{
+                transition: all 0.5s;
+                transform: scale(1.1);
             }
         }
     }
 }
+
+
+.products{
+    margin-top: 210px;
+    h2{
+        font-weight: 700;
+        
+    }
+    ul {
+        margin-top: 20px;
+
+        li {
+            li.nav-item {
+                a.nav-link {
+                    text-transform: capitalize;
+
+                    &:hover {
+                        color: $btn; // Color on hover
+                    }
+
+                    &.active {
+                        color: $btn; // Color for the active state
+                    }
+                }
+            }
+        }
+    }
 
 @media screen and (max-width: $mobile) {
     .review-right{
@@ -105,7 +150,21 @@
             
         }
     }
-
+    .cms-banner{
+        .cms-item{
+            &:first-child{
+                margin-bottom: 10px;
+            }
+            .cms-title{
+                p{
+                    font-size: 14px !important;
+                }
+                h4{
+                    font-size: 20px !important;
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: $table) {
 
@@ -114,4 +173,20 @@
 
 }
 @media screen and (max-width: $desktop) {
+    .cms-banner{
+        .cms-item{
+            .cms-title{
+                p{
+                    font-size: 1.4vw;
+                    
+                }
+                h4{
+                    font-size: 2.418vw;
+                }
+                button{
+
+                }
+            }
+        }
+    }
 }
