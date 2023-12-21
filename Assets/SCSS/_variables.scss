@@ -25,6 +25,6 @@ $desktop: 1440px;
     transition: all 0.5s;
     &:hover{
         transition: all 0.5s;
-        color: $btn;
+        color: $btn !important;
     }
 }
