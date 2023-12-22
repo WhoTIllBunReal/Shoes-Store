@@ -115,7 +115,7 @@
 
 
 .products {
-    margin-top: 210px;
+    margin-top: 150px;
     h2 {
         font-weight: 700;
 
@@ -158,7 +158,7 @@
             }
         }
         .products-detail{
-            margin-top: 25px;
+            margin-top: 15px;
             margin-bottom: 45px;
             a{
                 display: flex;
@@ -184,16 +184,50 @@
         }
     }
 
-    #more-products{
-        @include btn;
-        justify-content: center;
-        padding: 10px 15px;
-        font-size: 24px;
-        font-weight: bold;
-        display: block;
-        color: $text-white !important;
+    .product-btn{
+        margin-top: 2.06vw;
+        a{
+            @include btn;
+            padding: 10px 15px;
+            font-size: 24px;
+            font-weight: bold;
+            color: $text-white !important;
+        }
     }
 
+}
+.blog{
+    margin-top: 100px;
+    #blog-slider-slick {
+
+        .slick-prev,
+        .slick-next {
+            display: none !important;
+        }    }
+    h2{
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    .blog-item{
+        padding: 0 10px;
+        a{
+            .blog-detail{
+                margin-top: 10px;
+                p{
+                    font-size: 14px;
+                    
+                    color: $text-gray;
+                }
+                h4{
+                    @include text-hovering;
+                    font-size: 24px;
+                    
+                    font-weight: 700;
+                    margin: 10px 0 7px 0;
+                }
+            }
+        }
+    }
 }
 
 
@@ -229,9 +263,9 @@
             }
             button{
                 @include btn;
-                padding: 0.833vh 1.042vw;
+                padding: 0.833vh 1.542vw !important;
                 color: $text-white;
-                font-size: 4.354vw !important;
+                font-size: 3.7vw !important;
                 
             }
         }
@@ -263,6 +297,15 @@
             }
         }
     
+    }
+
+    .products{
+        .products-item{
+            &:nth-child(n+7){
+                display: none;
+            }
+    
+        }
     }
 
 }

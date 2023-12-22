@@ -28,3 +28,8 @@ $desktop: 1440px;
         color: $btn !important;
     }
 }
+
+@mixin centerit{
+    display: flex;
+    justify-content: center;
+}

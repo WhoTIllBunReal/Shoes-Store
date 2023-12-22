@@ -188,7 +188,7 @@ a {
 }
 
 .products {
-  margin-top: 210px;
+  margin-top: 150px;
 }
 .products h2 {
   font-weight: 700;
@@ -222,7 +222,7 @@ a {
   padding: 4px 7px;
 }
 .products .products-item .products-detail {
-  margin-top: 25px;
+  margin-top: 15px;
   margin-bottom: 45px;
 }
 .products .products-item .products-detail a {
@@ -248,20 +248,53 @@ a {
   margin-left: 5px;
   color: #909090;
 }
-.products #more-products {
+.products .product-btn {
+  margin-top: 2.06vw;
+}
+.products .product-btn a {
   background-color: #E27A25;
   transition: all 0.5s;
   border: none;
-  justify-content: center;
   padding: 10px 15px;
   font-size: 24px;
   font-weight: bold;
-  display: block;
   color: #fff !important;
 }
-.products #more-products:hover {
+.products .product-btn a:hover {
   background-color: #909090;
   transition: all 0.5s;
+}
+
+.blog {
+  margin-top: 100px;
+}
+.blog #blog-slider-slick .slick-prev,
+.blog #blog-slider-slick .slick-next {
+  display: none !important;
+}
+.blog h2 {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.blog .blog-item {
+  padding: 0 10px;
+}
+.blog .blog-item a .blog-detail {
+  margin-top: 10px;
+}
+.blog .blog-item a .blog-detail p {
+  font-size: 14px;
+  color: #909090;
+}
+.blog .blog-item a .blog-detail h4 {
+  transition: all 0.5s;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 10px 0 7px 0;
+}
+.blog .blog-item a .blog-detail h4:hover {
+  transition: all 0.5s;
+  color: #E27A25 !important;
 }
 
 @media screen and (max-width: 576px) {
@@ -291,9 +324,9 @@ a {
     background-color: #E27A25;
     transition: all 0.5s;
     border: none;
-    padding: 0.833vh 1.042vw;
+    padding: 0.833vh 1.542vw !important;
     color: #fff;
-    font-size: 4.354vw !important;
+    font-size: 3.7vw !important;
   }
   .banner .bn-title button:hover {
     background-color: #909090;
@@ -322,6 +355,9 @@ a {
   .banner .bn-title button:hover {
     background-color: #909090;
     transition: all 0.5s;
+  }
+  .products .products-item:nth-child(n+7) {
+    display: none;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -357,5 +393,113 @@ a {
   }
   .cms-banner .cms-item .cms-title h4 {
     font-size: 2.418vw;
+  }
+}
+.services {
+  margin-top: 100px;
+}
+.services .services-items {
+  padding: 34.166px 27.529px 35.533px 27.333px;
+}
+.services .services-items i {
+  font-size: 32.799px;
+  line-height: normal;
+  padding: 8px 0;
+  color: #909090;
+}
+.services .services-items .line {
+  margin: 0 25px;
+  border-right: 1px solid #909090;
+}
+.services .services-items p {
+  font-size: 14.4px;
+  color: #181818;
+  font-weight: 700;
+}
+.services .services-items p span {
+  color: #909090;
+  font-weight: 400;
+}
+
+.ft-all {
+  background-color: #262626;
+}
+.ft-all .ft-items {
+  margin-top: 70px;
+}
+.ft-all .ft-items p {
+  padding: 25px 0;
+  color: #fff;
+  font-size: 12.703px;
+  font-weight: 600;
+}
+.ft-all .ft-items .ft-brand {
+  margin-bottom: 10px;
+}
+.ft-all .ft-items .ft-brand ul li a {
+  padding: 0 27px 0 0;
+}
+.ft-all .ft-items .ft-brand ul li a i {
+  color: #fff;
+  font-size: 24px;
+}
+.ft-all .ft-items h5 {
+  color: #fff;
+}
+.ft-all .ft-items .line {
+  margin: 19px 0;
+  height: 1px;
+  width: 88px;
+  background-color: #E27A25;
+}
+.ft-all .ft-items ul li a {
+  padding-left: 0;
+  padding-bottom: 15px;
+  color: #fff !important;
+  transition: all 0.5s;
+}
+.ft-all .ft-items ul li a:hover {
+  transition: all 0.5s;
+  color: #E27A25 !important;
+}
+
+.copyright {
+  background-color: #181818;
+  padding: 23px 0;
+}
+.copyright h5 {
+  color: #fff;
+}
+
+@media screen and (max-width: 576px) {
+  .services {
+    display: none;
+  }
+  .ft-all .ft-items {
+    margin-top: 50px;
+  }
+  .ft-all .ft-items .ft-logo {
+    display: flex;
+    justify-content: center;
+  }
+  .ft-all .ft-items p {
+    text-align: center;
+  }
+  .ft-all .ft-items .ft-brand ul {
+    justify-content: center !important;
+  }
+  .ft-all .ft-items .line {
+    display: flex;
+    justify-content: center;
+    margin: 19px auto;
+  }
+  .ft-all .ft-items h5 {
+    text-align: center !important;
+  }
+  .ft-all .ft-items ul li {
+    text-align: center;
+  }
+  .copyright h5 {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=style.css.map */

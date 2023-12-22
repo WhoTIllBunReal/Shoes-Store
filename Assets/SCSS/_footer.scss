@@ -1,0 +1,124 @@
+
+.services{
+    margin-top: 100px;
+    .services-items{
+        padding: 34.166px 27.529px 35.533px 27.333px;
+        
+        i{
+            font-size: 32.799px;
+            line-height: normal;
+            padding: 8px 0;
+            color: $text-gray;
+        }
+        .line{
+            margin: 0 25px;
+            border-right: 1px solid $text-gray;   
+        }
+        p{
+            font-size: 14.4px;
+            color: $text-black;
+            font-weight: 700;
+            
+            span{
+                color: $text-gray;
+                font-weight: 400;
+            }
+        }
+    }
+}
+.ft-all{
+    background-color: $bgn;
+    .ft-items{
+        margin-top: 70px;
+        p{
+            padding: 25px 0;
+            color: $text-white;
+            font-size: 12.703px;
+            font-weight: 600;
+        }
+        .ft-brand{
+            margin-bottom: 10px;
+            ul {
+                li {
+                    a {
+                        padding: 0 27px 0 0;
+
+                        i {
+                            color: $text-white;
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+
+        h5{
+            color: $text-white;
+        }
+        .line{
+            margin: 19px 0 ;
+            height: 1px;
+            width: 88px;
+            background-color: $btn;
+            
+        }
+        ul{
+            li{
+                a{
+                    padding-left: 0;
+                    padding-bottom: 15px;
+                    color: $text-white !important;
+                    @include text-hovering
+                }
+            }
+        }
+    }
+}
+.copyright{
+    background-color: $text-black;
+    padding: 23px 0;
+    h5{
+        color: $text-white;
+    }
+}
+@media screen and (max-width: $mobile){
+    .services{
+        display: none;
+    }
+
+    .ft-all{
+        .ft-items{
+            margin-top: 50px;
+            .ft-logo{
+                display: flex;
+                justify-content: center;
+            }
+            p{
+                text-align: center
+            }
+            .ft-brand{
+                ul{
+                    justify-content: center !important;
+                }
+            }
+            .line{
+                @include centerit;
+                margin:19px auto;
+            }
+            h5{
+                text-align: center !important;
+            }
+            ul{
+                li{
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .copyright{
+        h5{
+            font-size: 14px;
+            
+        }
+    }
+}
