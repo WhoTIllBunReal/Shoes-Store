@@ -216,6 +216,27 @@
             }
         }
     }
+    .banner{
+        .bn-title{
+            p{
+                font-size: 3.25vw !important;
+                
+            }
+            h1{
+                font-size: 6.333vw !important;
+                font-weight: bold
+            }
+            button{
+                @include btn;
+                padding: 0.833vh 1.042vw;
+                color: $text-white;
+                font-size: 3.354vw;
+                
+            }
+        }
+    
+    }
+
 }
 @media screen and (max-width: $table) {
     .banner{

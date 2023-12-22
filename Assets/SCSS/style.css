@@ -277,6 +277,25 @@ a {
   .cms-banner .cms-item .cms-title h4 {
     font-size: 20px !important;
   }
+  .banner .bn-title p {
+    font-size: 3.25vw !important;
+  }
+  .banner .bn-title h1 {
+    font-size: 6.333vw !important;
+    font-weight: bold;
+  }
+  .banner .bn-title button {
+    background-color: #E27A25;
+    transition: all 0.5s;
+    border: none;
+    padding: 0.833vh 1.042vw;
+    color: #fff;
+    font-size: 3.354vw;
+  }
+  .banner .bn-title button:hover {
+    background-color: #909090;
+    transition: all 0.5s;
+  }
 }
 @media screen and (max-width: 768px) {
   .banner img {
