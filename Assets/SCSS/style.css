@@ -38,9 +38,6 @@ a {
   padding: 32px;
 }
 
-.hd-menu {
-  display: none;
-}
 .hd-menu button {
   border: none;
   font-weight: bold;
@@ -52,6 +49,17 @@ a {
   padding: 15px;
 }
 
+.hd-nav button {
+  border: none;
+  font-weight: bold;
+  color: #181818;
+}
+.hd-nav button i {
+  padding: 0 5px;
+}
+.hd-nav .navbar-toggler:focus {
+  box-shadow: none;
+}
 .hd-nav ul li {
   margin-right: 27px;
 }
@@ -70,23 +78,17 @@ a {
   .hd-menu {
     display: flex;
   }
-  .hd-nav {
-    display: none;
-  }
-  .hd-nav ul {
-    display: table-column;
-  }
 }
 .banner {
   position: relative;
 }
 .banner img {
-  height: auto;
+  height: 35.729vw;
 }
 .banner .bn-title {
   position: absolute;
   top: 25%;
-  right: 20%;
+  left: 55%;
 }
 .banner .bn-title p {
   color: #909090;
@@ -254,9 +256,7 @@ a {
   padding: 10px 15px;
   font-size: 24px;
   font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   color: #fff !important;
 }
 .products #more-products:hover {
@@ -276,6 +276,57 @@ a {
   }
   .cms-banner .cms-item .cms-title h4 {
     font-size: 20px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner img {
+    height: 60.917vw;
+  }
+  .banner .bn-title p {
+    font-size: 3.25vw;
+  }
+  .banner .bn-title h1 {
+    font-size: 6.333vw;
+    font-weight: bold;
+  }
+  .banner .bn-title button {
+    background-color: #E27A25;
+    transition: all 0.5s;
+    border: none;
+    padding: 0.833vh 1.042vw;
+    color: #fff;
+    font-size: 3.354vw;
+  }
+  .banner .bn-title button:hover {
+    background-color: #909090;
+    transition: all 0.5s;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .banner img {
+    height: 66.992vw;
+  }
+  .banner .bn-title {
+    top: 30%;
+  }
+  .banner .bn-title p {
+    font-size: 1.85vw;
+  }
+  .banner .bn-title h1 {
+    font-size: 4.8vw;
+    font-weight: bold;
+  }
+  .banner .bn-title button {
+    background-color: #E27A25;
+    transition: all 0.5s;
+    border: none;
+    padding: 0.833vh 1.042vw;
+    color: #fff;
+    font-size: 2.354vw;
+  }
+  .banner .bn-title button:hover {
+    background-color: #909090;
+    transition: all 0.5s;
   }
 }
 @media screen and (max-width: 1440px) {

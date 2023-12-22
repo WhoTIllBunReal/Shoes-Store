@@ -6,7 +6,7 @@
     }
 }
 .hd-menu{
-    display: none;
+    // display: none;
     button{
         border: none;
         font-weight: bold;
@@ -25,6 +25,17 @@
 
 }
 .hd-nav{
+    button{
+        border: none;
+        font-weight: bold;
+        color: $text-black;
+        i{
+            padding: 0 5px;
+        }
+    }
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
     ul{
         li{
             margin-right: 27px;
@@ -52,12 +63,12 @@
     .hd-menu{
         display: flex;
     }
-    .hd-nav{
-        display: none;
-        ul{
-            display: table-column;
-        }
-    }
+    // .hd-nav{
+    //     display: none;
+    //     ul{
+    //         display: table-column;
+    //     }
+    // }
 
 }
 @media screen and (max-width: $laptop) {
