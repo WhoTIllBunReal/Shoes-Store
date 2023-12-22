@@ -277,6 +277,9 @@ a {
   .cms-banner .cms-item .cms-title h4 {
     font-size: 20px !important;
   }
+  .banner .bn-title {
+    top: 20% !important;
+  }
   .banner .bn-title p {
     font-size: 3.25vw !important;
   }
@@ -290,7 +293,7 @@ a {
     border: none;
     padding: 0.833vh 1.042vw;
     color: #fff;
-    font-size: 3.354vw;
+    font-size: 4.354vw !important;
   }
   .banner .bn-title button:hover {
     background-color: #909090;
