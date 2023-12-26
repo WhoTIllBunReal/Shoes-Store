@@ -37,3 +37,30 @@ $('#blog-slider-slick').slick({
       }
     ]
   });
+
+  $(document).ready(function() {
+    $('#shop-filter').click(function() {
+      $('.side-menu-mobile').toggle();
+    });
+  });
+
+
+  $(document).ready(function() {
+    $('.slider-for').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.slider-nav'
+    });
+    $('.slider-nav').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.slider-for',
+      dots: false,
+      centerMode: true,
+      focusOnSelect: true,
+      prevArrow: '<button type="button" class="slick-prev">Previous</button>', // Add previous arrow
+      nextArrow: '<button type="button" class="slick-next">Next</button>' // Add next arrow
+    });
+  });

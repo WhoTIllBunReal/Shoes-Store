@@ -21,6 +21,24 @@ $desktop: 1440px;
     }
 }
 
+@mixin btn-nonact{
+    transition: all 0.5s;
+    border: none;
+    a{
+        transition: all 0.5s;
+    }
+
+    &:hover{
+        color: $text-white !important;
+        background-color: $btn;
+        transition: all 0.5s;
+        a{
+            transition: all 0.5s;
+            color: $text-white !important;
+        }
+    }
+}
+
 @mixin text-hovering{
     transition: all 0.5s;
     &:hover{

@@ -1,0 +1,29 @@
+.product{
+    .slider-nav{
+        img{
+            padding: 0 10px;
+        }
+    }
+
+
+    .product-detail{
+        h4{
+            font-weight: 700;
+            
+        }
+        h5{
+            font-weight: 600;
+            color: $btn;
+            margin-top: 8px;
+        }
+        .line{
+            height: 1px;
+            width: 100%;
+            background-color: $text-gray;
+            margin: 40px 0 25px 0;
+        }
+        p{
+            color: $text-gray;
+        }
+    }
+}
