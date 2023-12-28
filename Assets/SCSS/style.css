@@ -746,4 +746,89 @@ a {
 }
 .product .product-detail p {
   color: #909090;
+}
+.product .quantity {
+  margin-top: 90px;
+}
+.product .quantity .quantity-box .input-group {
+  border: 1px solid var(--Text-gray, #909090);
+}
+.product .quantity .quantity-box .input-group .form-control {
+  box-shadow: none;
+  border: none;
+}
+.product .quantity .quantity-box .input-group input {
+  border-left: 1px solid var(--Text-gray, #909090) !important;
+  border-right: 1px solid var(--Text-gray, #909090) !important;
+}
+.product .quantity .quantity-btn {
+  margin: auto 0px;
+}
+.product .quantity .quantity-btn button {
+  border-radius: 0;
+  padding: 7px 35px;
+  background-color: #E27A25;
+  transition: all 0.5s;
+  border: none;
+}
+.product .quantity .quantity-btn button:hover {
+  background-color: #909090;
+  transition: all 0.5s;
+}
+
+.description {
+  margin-top: 95px;
+}
+.description .description-btn ul li {
+  margin-right: 10px;
+}
+.description .description-btn ul li a {
+  padding: 16px 20px;
+  transition: all 0.5s;
+  border: none;
+  font-weight: 700;
+}
+.description .description-btn ul li a a {
+  transition: all 0.5s;
+}
+.description .description-btn ul li a:hover {
+  color: #fff !important;
+  background-color: #E27A25;
+  transition: all 0.5s;
+}
+.description .description-btn ul li a:hover a {
+  transition: all 0.5s;
+  color: #fff !important;
+}
+.description .description-btn ul li .active {
+  color: #fff !important;
+  background-color: #E27A25;
+  transition: all 0.5s;
+  border: none;
+}
+.description .description-btn ul li .active:hover {
+  background-color: #909090;
+  transition: all 0.5s;
+}
+.description .description-detail {
+  background-color: #fff;
+}
+.description .description-detail dl {
+  padding: 35px 22px;
+}
+.description .description-detail p {
+  padding: 35px 22px;
+  color: #909090;
+}
+
+.related-products {
+  margin: 65px 0 25px 0;
+}
+.related-products h3 {
+  margin-bottom: 25px;
+  padding: 10px 22px;
+  border-left: 4px solid #181818;
+}
+.related-products #related-pd .products-item {
+  padding: 0 5px !important;
 }/*# sourceMappingURL=style.css.map */
