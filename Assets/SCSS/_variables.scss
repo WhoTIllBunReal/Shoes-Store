@@ -20,6 +20,15 @@ $desktop: 1440px;
         transition: all 0.5s;
     }
 }
+@mixin blog-btn{
+    background-color: $text-black;
+    transition: all 0.5s;
+    border: none;
+    &:hover{
+        background-color: $btn;
+        transition: all 0.5s;
+    }
+}
 
 @mixin btn-nonact{
     transition: all 0.5s;
@@ -31,6 +40,23 @@ $desktop: 1440px;
     &:hover{
         color: $text-white !important;
         background-color: $btn;
+        transition: all 0.5s;
+        a{
+            transition: all 0.5s;
+            color: $text-white !important;
+        }
+    }
+}
+@mixin blog-btn-nonact{
+    transition: all 0.5s;
+    border: none;
+    a{
+        transition: all 0.5s;
+    }
+
+    &:hover{
+        color: $text-white !important;
+        background-color: $text-gray;
         transition: all 0.5s;
         a{
             transition: all 0.5s;
