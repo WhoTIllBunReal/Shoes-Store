@@ -1,14 +1,14 @@
 .blog-content{
+    margin: 40px 0 35px 0;
     .blog-content-item{
-        margin: 40px 0 35px 0;
-        background-color: $text-white;
-        .blog-img{
-            img{
-                height: 100%;
-            }
+        padding: 0 5px;
+        margin-bottom: 15px;
+        .blog-content-img{
+            padding: 0;
         }
-        .blog-detail{
-            margin-top: 10px;
+        .blog-content-detail{
+            background-color: $text-white;
+            padding: 30px 120px 0 40px;
             p{
                 font-size: 16px;
                 
@@ -53,5 +53,20 @@
 
 }
 @media screen and (max-width: $table){
+    .blog-content{
+        .blog-content-item{
+            flex-direction: column;
+            .blog-content-detail{
+                padding: 20px 20px 0 20px;
+
+                h2{
+                    font-size: 26px;
+                }
+                p{
+                    font-size: 14px !important;
+                }
+            }
+        }
+    }
 }
 
