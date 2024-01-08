@@ -70,13 +70,13 @@
     margin-top: 85px;
 
     .cms-item{
-        position: relative;
-        overflow: hidden;
-        z-index: 20;
-        border: 1px solid $bgn;
-        padding: 0;
+        .cms-detail{
+            position: relative;
+            overflow: hidden;
+
+        }
+        // padding: 0;
         img{
-            z-index: 100;
             transition: all 0.5s;
         }
 

@@ -3,10 +3,12 @@
     margin-top: 100px;
     .services-items{
         padding: 34.166px 27.529px 35.533px 27.333px;
+        margin-bottom: 35px;
         
         i{
             font-size: 32.799px;
             line-height: normal;
+            width: 41px;
             padding: 8px 0;
             color: $text-gray;
         }
@@ -83,7 +85,9 @@
 }
 @media screen and (max-width: $mobile){
     .services{
-        display: none;
+        .services-items{
+            margin-left: 20%;
+        }
     }
 
     .ft-all{
@@ -122,3 +126,33 @@
         }
     }
 }
+@media screen and (max-width: $laptop){
+    .services{
+        margin-top: 100px;
+        .services-items{
+            padding: 0 20px 0 0; 
+            margin-bottom: 35px;
+            
+            i{
+                font-size: 32.799px;
+                line-height: normal;
+                width: 41px;
+                padding: 8px 0;
+                color: $text-gray;
+            }
+            .line{
+                margin: 0 25px;
+                border-right: 1px solid $text-gray;   
+            }
+            p{
+                color: $text-black;
+                font-weight: 700;
+                
+                span{
+                    color: $text-gray;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    }

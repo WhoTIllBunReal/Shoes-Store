@@ -152,15 +152,11 @@ a {
 .cms-banner {
   margin-top: 85px;
 }
-.cms-banner .cms-item {
+.cms-banner .cms-item .cms-detail {
   position: relative;
   overflow: hidden;
-  z-index: 20;
-  border: 1px solid #262626;
-  padding: 0;
 }
 .cms-banner .cms-item img {
-  z-index: 100;
   transition: all 0.5s;
 }
 .cms-banner .cms-item .cms-title {
@@ -404,10 +400,12 @@ a {
 }
 .services .services-items {
   padding: 34.166px 27.529px 35.533px 27.333px;
+  margin-bottom: 35px;
 }
 .services .services-items i {
   font-size: 32.799px;
   line-height: normal;
+  width: 41px;
   padding: 8px 0;
   color: #909090;
 }
@@ -476,8 +474,8 @@ a {
 }
 
 @media screen and (max-width: 576px) {
-  .services {
-    display: none;
+  .services .services-items {
+    margin-left: 20%;
   }
   .ft-all .ft-items {
     margin-top: 50px;
@@ -505,6 +503,34 @@ a {
   }
   .copyright h5 {
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .services {
+    margin-top: 100px;
+  }
+  .services .services-items {
+    padding: 0 20px 0 0;
+    margin-bottom: 35px;
+  }
+  .services .services-items i {
+    font-size: 32.799px;
+    line-height: normal;
+    width: 41px;
+    padding: 8px 0;
+    color: #909090;
+  }
+  .services .services-items .line {
+    margin: 0 25px;
+    border-right: 1px solid #909090;
+  }
+  .services .services-items p {
+    color: #181818;
+    font-weight: 700;
+  }
+  .services .services-items p span {
+    color: #909090;
+    font-weight: 400;
   }
 }
 .shop-banner {
