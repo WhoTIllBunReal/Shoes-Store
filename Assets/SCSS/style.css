@@ -753,11 +753,15 @@ a {
     margin-bottom: 100px;
   }
 }
+.product h4 {
+  font-size: 20px;
+}
 .product .slider-nav img {
   padding: 0 10px;
 }
 .product .product-detail h4 {
   font-weight: 700;
+  font-size: 24px;
 }
 .product .product-detail h5 {
   font-weight: 600;
@@ -859,6 +863,11 @@ a {
   padding: 0 5px !important;
 }
 
+@media screen and (max-width: 576px) {
+  .product .quantity {
+    margin-top: 40px;
+  }
+}
 .blog-content {
   margin: 40px 0 35px 0;
 }

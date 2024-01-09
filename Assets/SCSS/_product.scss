@@ -1,4 +1,8 @@
 .product{
+    h4{
+        font-size: 20px;
+        
+    }
     .slider-nav{
         img{
             padding: 0 10px;
@@ -9,7 +13,8 @@
     .product-detail{
         h4{
             font-weight: 700;
-            
+            font-size: 24px;
+        
         }
         h5{
             font-weight: 600;
@@ -102,4 +107,14 @@
 
     }
 
+}
+
+@media screen and (max-width: $mobile) {
+
+    .product{
+        .quantity {
+            margin-top: 40px;
+        }    
+    }
+    
 }
