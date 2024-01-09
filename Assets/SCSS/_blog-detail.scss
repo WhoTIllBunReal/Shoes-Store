@@ -1,0 +1,80 @@
+.blog-detail{
+    margin-top: 40px;
+    .blog-detail-item{
+        .blog-detail-title{
+            img{
+                height: 749.492px;
+            }
+            margin: 0 0px 0 0px;
+            border-bottom: 1px solid $text-gray;
+            h3{
+                margin: 20px 0 10px 0px;
+                color: $text-black;
+            }
+            p{
+                color: $text-gray;
+                margin-bottom: 10px;
+                a{
+                    color: $text-gray !important;
+                    @include text-hovering;
+                }
+            }
+            
+        }
+        .blog-detail-conent{
+            margin: 40px 0px 0 0px;
+            p{
+                color: $text-black;
+            }
+        }
+        .blog-detail-cmt{
+            margin: 50px 0px 0 0px;
+            border-radius: 5px;
+            background-color: $text-white;
+            border: none!important;
+            h4{
+                padding: 20px 0 0 20px;
+            }
+            p{
+                color: $text-gray;
+                padding: 40px 0 60px 0;
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .blog-detail-cmt2{
+            background-color: $text-white !important;
+            margin: 20px 0px 0 0px;
+            .card{
+                border: none!important;
+
+            }
+        }
+        .related-products{
+            margin: 65px 0 25px 0;
+            h3{
+                margin-bottom: 25px;
+                padding: 10px 22px;
+                border-left: 4px solid $text-black;
+            }
+            #related-pd{
+                .products-item{
+                    padding: 0 5px !important;
+                    .products-detail{
+                        a{
+                            h4{
+                                padding: 20px 0;
+                                @include text-hovering;
+                            }
+                        }
+                        p{
+                            padding-right: 10px;
+                        }
+                    }
+                }
+        
+            }
+        
+        }
+    }
+}
