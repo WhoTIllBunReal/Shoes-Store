@@ -9,6 +9,17 @@
         }
     }
 
+    .product-img{
+        .slider-nav{
+            .slick-current{
+                border-bottom: 1px solid $btn;
+                border-radius: 5px;
+            }
+            img{
+                height: 115px;
+            }
+        }
+    }
 
     .product-detail{
         h4{
@@ -115,6 +126,9 @@
         .quantity {
             margin-top: 40px;
         }    
+        .product-detail{
+            margin-top: 20px;
+        }
     }
     
 }

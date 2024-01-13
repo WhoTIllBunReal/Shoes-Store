@@ -45,25 +45,66 @@ $('#blog-slider-slick').slick({
   });
 
 
+  // $(document).ready(function() {
+  //   $('.slider-for').slick({
+  //     slidesToShow: 1,
+  //     slidesToScroll: 1,
+  //     arrows: false,
+  //     fade: true,
+  //     asNavFor: '.slider-nav'
+  //   });
+  //   $('.slider-nav').slick({
+  //     slidesToShow: 3,
+  //     slidesToScroll: 1,
+  //     asNavFor: '.slider-for',
+  //     dots: false,
+  //     centerMode: true,
+  //     focusOnSelect: true,
+  //     prevArrow: '<button type="button" class="slick-prev">Previous</button>', // Add previous arrow
+  //     nextArrow: '<button type="button" class="slick-next">Next</button>' // Add next arrow
+  //   });
+  // });
+
+
   $(document).ready(function() {
+    // Initialize the main slider
     $('.slider-for').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      fade: true,
-      asNavFor: '.slider-nav'
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav'
     });
+
+    // Initialize the navigation slider
     $('.slider-nav').slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      asNavFor: '.slider-for',
-      dots: false,
-      centerMode: true,
-      focusOnSelect: true,
-      prevArrow: '<button type="button" class="slick-prev">Previous</button>', // Add previous arrow
-      nextArrow: '<button type="button" class="slick-next">Next</button>' // Add next arrow
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true,
+        prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+        nextArrow: '<button type="button" class="slick-next">Next</button>',
+        centerPadding: '0', // Adjust this value as needed
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    centerPadding: '0' // Adjust this value for smaller screens
+                }
+            }
+        ]
     });
-  });
+
+    // Add "active" class to the selected slide in the main slider
+    $('.slider-for').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+        // Remove "active" class from all slides
+        $('.slider-for .slick-slide').removeClass('active');
+        // Add "active" class to the next slide
+        $('.slider-for .slick-slide').eq(nextSlide).addClass('active');
+    });
+});
 
   $(document).ready(function(){
 
@@ -127,6 +168,41 @@ $('#blog-slider-slick').slick({
           breakpoint: 480,
           settings: {
             slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+    $('#related-blg').slick({
+      dots: true,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 3,
+      slidesToScroll: 4,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
             slidesToScroll: 2
           }
         }

@@ -1,115 +1,134 @@
-.banner{
-    position: relative;
-    img{
-        height: 35.729vw;
+.banner {
+
+    // position: relative;
+    img {
+        // height: 35.729vw;
     }
-    .bn-title{
-        position: absolute;
-        top:25%;
-        left: 55%;
-        p{
+
+    background-image: url("../Image/banner.png");
+    background-size: cover;
+    padding: 245px 0;
+
+    .bn-title {
+        padding-left: 1200px;
+
+        p {
             color: $text-gray;
             font-size: 1.25vw;
-            
+
         }
-        h1{
+
+        h1 {
             font-size: 3.333vw;
             color: $text-black;
             padding-bottom: 3.125vh;
         }
-        button{
+
+        button {
             @include btn;
             padding: 0.833vh 1.042vw;
             color: $text-white;
             font-size: 1.354vw;
-            
+
         }
     }
 }
 
-.review-banner{
+.review-banner {
     margin-top: 5.208vw;
-    .review-title{
-        h1{
+
+    .review-title {
+        h1 {
             margin-top: 1.719vw;
             font-weight: 700;
             // font-size: 2.13vw;
-            
+
         }
-        p{
+
+        p {
             color: $text-gray;
             margin-top: 11px;
         }
-        button{
+
+        button {
             @include btn;
             margin-top: 11px;
             // font-size: 0.833vw;
             padding: 0.451vw 2.083vw;
             color: $text-white;
-            i{
+
+            i {
                 padding-left: 10px;
             }
 
         }
     }
-    .review-right{
+
+    .review-right {
         display: flex;
         flex-direction: column;
-        img{
+
+        img {
             flex-basis: 50%;
+
             // height: 100%;
-            &:first-child{
+            &:first-child {
                 padding-bottom: 0.573vw;
             }
-            
+
         }
     }
 }
 
-.cms-banner{
+.cms-banner {
     margin-top: 85px;
 
-    .cms-item{
-        .cms-detail{
+    .cms-item {
+        .cms-detail {
             position: relative;
             overflow: hidden;
 
         }
+
         // padding: 0;
-        img{
+        img {
             transition: all 0.5s;
         }
 
 
 
-        .cms-title{
+        .cms-title {
             position: absolute;
             top: 25%;
             left: 10%;
-            p{
+
+            p {
                 color: $text-gray;
                 font-weight: 500;
                 font-size: 17px;
 
             }
-            h4{
+
+            h4 {
                 font-weight: 700;
                 color: $text-black;
                 font-size: 35px;
-                
-                
+
+
             }
-            button{
+
+            button {
                 background-color: transparent;
                 border: none;
                 font-size: 13px;
                 color: $btn ;
                 text-decoration: underline;
-                margin-top: 5.208vw ;
+                margin-top: 5.208vw;
             }
         }
-        &:hover{
-            img{
+
+        &:hover {
+            img {
                 transition: all 0.5s;
                 transform: scale(1.1);
             }
@@ -120,39 +139,46 @@
 
 .products {
     margin-top: 150px;
+
     h2 {
         font-weight: 700;
 
     }
+
     .nav-pills {
+
         .nav-link.active,
         .show>.nav-link {
             background-color: transparent;
             color: $btn !important;
         }
     }
+
     ul {
         margin-top: 20px;
         margin-bottom: 60px;
-        li{
-            a{
+
+        li {
+            a {
                 font-weight: 600;
                 transition: all 0.5s;
             }
-            &:hover{
-                a{
+
+            &:hover {
+                a {
                     transition: all 0.5s;
                     color: $btn !important;
                 }
             }
-        
+
         }
     }
 
-    .products-item{
-        .products-img{
+    .products-item {
+        .products-img {
             position: relative;
-            .sale{
+
+            .sale {
                 position: absolute;
                 top: 4%;
                 left: 4%;
@@ -161,10 +187,12 @@
                 padding: 4px 7px;
             }
         }
-        .products-detail{
+
+        .products-detail {
             margin-top: 15px;
             margin-bottom: 45px;
-            a{
+
+            a {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -174,11 +202,12 @@
                 margin-bottom: 15px;
                 @include text-hovering;
             }
-            p{
+
+            p {
                 color: $btn;
                 font-weight: 700;
 
-                span{
+                span {
                     font-size: 11.17px;
                     font-weight: 400;
                     margin-left: 5px;
@@ -188,9 +217,10 @@
         }
     }
 
-    .product-btn{
+    .product-btn {
         margin-top: 2.06vw;
-        a{                    
+
+        a {
             @include btn;
             padding: 10px 15px;
             font-size: 24px;
@@ -200,32 +230,40 @@
     }
 
 }
-.blog{
+
+.blog {
     margin-top: 100px;
+
     #blog-slider-slick {
 
         .slick-prev,
         .slick-next {
             display: none !important;
-        }    }
-    h2{
+        }
+    }
+
+    h2 {
         font-weight: 700;
         margin-bottom: 30px;
     }
-    .blog-item{
+
+    .blog-item {
         padding: 0 10px;
-        a{
-            .blog-detail{
+
+        a {
+            .blog-detail {
                 margin-top: 10px;
-                p{
+
+                p {
                     font-size: 14px;
-                    
+
                     color: $text-gray;
                 }
-                h4{
+
+                h4 {
                     @include text-hovering;
                     font-size: 24px;
-                    
+
                     font-weight: 700;
                     margin: 10px 0 7px 0;
                 }
@@ -234,127 +272,151 @@
     }
 }
 
+@media screen and (max-width: $desktop) {
+    .cms-banner {
+        .cms-item {
+            .cms-title {
+                p {
+                    font-size: 1.4vw;
 
-@media screen and (max-width: $mobile) {
-    .review-right{
-        display: none !important;
-    }
-    .cms-banner{
-        .cms-item{
-            &:first-child{
-                margin-bottom: 10px;
-            }
-            .cms-title{
-                p{
-                    font-size: 14px !important;
                 }
-                h4{
-                    font-size: 20px !important;
+
+                h4 {
+                    font-size: 2.418vw;
                 }
+
+                button {}
             }
         }
-    }
-    .banner{
-        .bn-title{
-            top: 20% !important;
-            p{
-                font-size: 3.25vw !important;
-                
-            }
-            h1{
-                font-size: 6.333vw !important;
-                font-weight: bold
-            }
-            button{
-                @include btn;
-                padding: 0.833vh 1.542vw !important;
-                color: $text-white;
-                font-size: 3.7vw !important;
-                
-            }
-        }
-    
     }
 
+    .banner {
+        padding: 180px;
+
+        .bn-title {
+            padding-left: 760px;
+        }
+    }
 }
-@media screen and (max-width: $table) {
-    .banner{
-        img{
-            height: 60.917vw;
-            
-        }
-        .bn-title{
-            p{
-                font-size: 3.25vw;
-                
-            }
-            h1{
-                font-size: 6.333vw;
-                font-weight: bold
-            }
-            button{
-                @include btn;
-                padding: 0.833vh 1.042vw;
-                color: $text-white;
-                font-size: 3.354vw;
-                
-            }
-        }
-    
-    }
 
-    .products{
-        .products-item{
-            &:nth-child(n+7){
-                display: none;
-            }
-    
-        }
-    }
-
-}
 @media screen and (max-width: $laptop) {
-    .banner{
-        
-        img{
-            height: 66.992vw;
-        }
-        .bn-title{
-            top: 30%;
-            p{
+    .banner {
+        padding: 100px;
+
+        .bn-title {
+            padding-left: 478px;
+
+            p {
                 font-size: 1.85vw;
-                
+
             }
-            h1{
-                font-size: 4.8vw;
+
+            h1 {
+                // font-size: 4.8vw;
                 font-weight: bold
             }
-            button{
+
+            button {
                 @include btn;
                 padding: 0.833vh 1.042vw;
                 color: $text-white;
                 font-size: 2.354vw;
-                
+
             }
         }
 
     }
 }
-@media screen and (max-width: $desktop) {
-    .cms-banner{
-        .cms-item{
-            .cms-title{
-                p{
-                    font-size: 1.4vw;
-                    
-                }
-                h4{
-                    font-size: 2.418vw;
-                }
-                button{
 
+@media screen and (max-width: $table) {
+    .banner {
+        padding: 80px;
+
+        .bn-title {
+            padding-left: 370px;
+
+            p {
+                // font-size: 3.25vw;
+
+            }
+
+            h1 {
+                // font-size: 6.333vw;
+                font-weight: bold
+            }
+
+            button {
+                @include btn;
+                padding: 0.833vh 1.042vw;
+                color: $text-white;
+                // font-size: 3.354vw;
+
+            }
+        }
+
+    }
+
+    .products {
+        .products-item {
+            &:nth-child(n+7) {
+                display: none;
+            }
+
+        }
+    }
+
+}
+
+
+@media screen and (max-width: $mobile) {
+    .review-right {
+        display: none !important;
+    }
+
+    .cms-banner {
+        .cms-item {
+            &:first-child {
+                margin-bottom: 10px;
+            }
+
+            .cms-title {
+                p {
+                    font-size: 14px;
+                }
+
+                h4 {
+                    font-size: 20px;
                 }
             }
         }
     }
+
+    .banner {
+        padding: 100px;
+
+        .bn-title {
+            padding-left: 1px;
+            padding-top: 175px;
+
+            p {
+                font-size: 4.25vw !important;
+
+            }
+
+            h1 {
+                font-size: 7.333vw !important;
+                font-weight: bold
+            }
+
+            button {
+                @include btn;
+                padding: 0.833vh 1.542vw !important;
+                color: $text-white;
+                font-size: 3.7vw !important;
+
+            }
+        }
+
+    }
+
 }

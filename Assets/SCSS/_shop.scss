@@ -214,6 +214,21 @@
 @media screen and (max-width: $mobile) {
     .shop-page{
         margin-bottom: 100px;
+        .products-item{
+            :nth-child(n + 7){
+                display: none;
+            }
+        }
+    }
+    .shop-page{
+        margin-top: 20px;
+        .products-item{
+            &:nth-child(n+7){
+                display: none;
+            }
+        }
+    
+    
     }
     
 }

@@ -1,33 +1,75 @@
+@charset "utf-8";
 
-.services{
-    margin-top: 100px;
-    .services-items{
-        padding: 34.166px 7.529px 35.533px 27.333px;
-        margin-bottom: 35px;
-        
-        i{
-            font-size: 32.799px;
-            line-height: normal;
-            width: 41px;
-            padding: 8px 0;
-            color: $text-gray;
-        }
-        .line{
-            margin: 0 25px;
-            border-right: 1px solid $text-gray;   
-        }
-        p{
-            font-size: 14.4px;
-            color: $text-black;
-            font-weight: 700;
-            padding-top: 2px ;
-            span{
-                color: $text-gray;
-                font-weight: 400;
-            }
-        }
-    }
+.service-content {
+  h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $text-black;
+  }
+
+  p {
+    font-size: 13px;
+    color: $text-gray;
+  }
 }
+
+.service-icon {
+  i {
+    font-size: 32px;
+    color: #777;
+  }
+
+  border-right: 1px solid $text-gray;
+  width: 20%;
+  padding: 0 12px;
+}
+
+.service-content {
+  width: 80%;
+  padding: 0 12px;
+
+  .slider {
+    background-image: url("../Assets/Image/banner.png");
+    background-size: cover;
+    padding: 200px 0;
+  }
+}
+
+/* SCSS Document */
+
+@media screen and (max-width: 1199px) {
+  .service-icon {
+    width: 30%;
+    padding-top: 10px;
+  }
+
+  .service-content {
+    width: 70%;
+
+    h4 {
+      font-size: 14px;
+    }
+
+    .slider {
+      padding: 150px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .service-icon,
+  .service-content {
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+  }
+
+  .slider {
+    padding: 100px 0;
+  }
+}
+
 .ft-all{
     background-color: $bgn;
     .ft-items{
@@ -156,4 +198,11 @@
             }
         }
     }
+    }
+
+    @media screen and (max-width: $table) {
+        .service-icon {          
+            border-right: none;
+          }
+          
     }
